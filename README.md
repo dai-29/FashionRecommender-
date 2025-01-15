@@ -48,4 +48,5 @@ The Fashion Recommendation System is a machine learning-based application that s
 - Python 3.8 or above
 - Required libraries: TensorFlow, scikit-learn, Streamlit, Pillow, NumPy
 
-
+## Screenshot
+(Screenshot (145).png)
