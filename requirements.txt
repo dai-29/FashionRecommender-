@@ -1,3 +1,5 @@
-fastapi
-uvicorn[standard]
-xlwings
+streamlit
+numpy
+tensorflow
+scikit-learn
+pillow
