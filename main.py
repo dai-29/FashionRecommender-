@@ -83,7 +83,7 @@ st.sidebar.markdown("""
 st.sidebar.markdown("### Contact")
 st.sidebar.info("""
 For any queries or feedback, feel free to reach out:  
-📧 **[anubhavpatwal2914@gmail.com](mailto:anubhavpatwal2914@gmail.com)**  
+📧 **[anubhavpatwal2929@gmail.com](mailto:anubhavpatwal2914@gmail.com)**  
 """)
 
 # File upload section
@@ -116,5 +116,6 @@ st.markdown("""
 **Developed by Anubhav Patwal (https://github.com/dai-29)**  
 Powered by Python, TensorFlow, and Streamlit.
 """)
+
 
 
