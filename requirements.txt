@@ -1,5 +1,7 @@
 streamlit
-numpy
 tensorflow
-scikit-learn
+keras
+numpy
 pillow
+scikit-learn
+opencv-python
