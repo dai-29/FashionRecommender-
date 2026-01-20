@@ -19,6 +19,22 @@ Upload an image of a fashion item, and this app will recommend similar items bas
 Enjoy discovering your next favorite style! 😊
 """)
 
+# ------------------------------
+# DUMMY EMBEDDINGS (for demo deployment)
+import pickle
+import numpy as np
+import os
+
+if not os.path.exists('embeddings.pkl') or not os.path.exists('filenames.pkl'):
+    n_images = 15
+    embedding_size = 2048
+    feature_list = np.random.rand(n_images, embedding_size)
+    filenames = [f"images/img{i+1}.jpg" for i in range(n_images)]
+    pickle.dump(feature_list, open('embeddings.pkl', 'wb'))
+    pickle.dump(filenames, open('filenames.pkl', 'wb'))
+# ------------------------------
+
+
 # Load pre-trained model and data
 feature_list = np.array(pickle.load(open('embeddings.pkl', 'rb')))
 filenames = pickle.load(open('filenames.pkl', 'rb'))
@@ -95,3 +111,4 @@ st.markdown("""
 **Developed by Anubhav Patwal (https://github.com/dai-29)**  
 Powered by Python, TensorFlow, and Streamlit.
 """)
+
