@@ -20,24 +20,6 @@ Enjoy discovering your next favorite style! 😊
 """)
 
 # ------------------------------
-# DUMMY EMBEDDINGS (for demo deployment)
-import pickle
-import numpy as np
-import os
-
-if not os.path.exists('embeddings.pkl') or not os.path.exists('filenames.pkl'):
-    n_images = 15
-    embedding_size = 2048
-    feature_list = np.random.rand(n_images, embedding_size)
-    filenames = [
-    'images/1541.jpg','images/1542.jpg','images/1543.jpg','images/1548.jpg','images/1549.jpg',
-    'images/2111.jpg','images/2112.jpg','images/2114.jpg','images/2115.jpg','images/2116.jpg',
-    'images/22759.jpg','images/22766.jpg','images/22767.jpg','images/22768.jpg','images/22769.jpg'
-    ]
-
-    pickle.dump(feature_list, open('embeddings.pkl', 'wb'))
-    pickle.dump(filenames, open('filenames.pkl', 'wb'))
-# ------------------------------
 
 
 # Load pre-trained model and data
@@ -116,6 +98,7 @@ st.markdown("""
 **Developed by Anubhav Patwal (https://github.com/dai-29)**  
 Powered by Python, TensorFlow, and Streamlit.
 """)
+
 
 
 
